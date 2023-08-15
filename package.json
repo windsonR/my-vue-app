@@ -1,0 +1,26 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.4",
+    "tslib": "^2.6.1",
+    "vue": "^2.7.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
+    "vite": "^4.4.5"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "ant-design-vue@1.7.4": "patches/ant-design-vue@1.7.4.patch"
+    }
+  }
+}
